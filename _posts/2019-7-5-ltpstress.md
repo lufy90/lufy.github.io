@@ -3,7 +3,7 @@ layout: post
 title: Notes of Running Ltp
 ---
 
-###Installation
+### Installation
 1. Install needed packages:
 `
 yum install -y \
@@ -29,7 +29,7 @@ Tip: on aarch64 OS currently(isoft 5.0 and 5.1), only **ltp-full-20180118** coul
 ./configure CPPFLAGS=-I/usr/include/tirpc LDFLAGS=-ltirpc --prefix=/opt/ltp20180118
 `
 
-###Run test:
+### Run test:
 1. Evironment settings:
 `
 \#disable firewalld
