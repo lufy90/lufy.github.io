@@ -12,7 +12,7 @@ yum install -y \
   libaio libaio-devel libcap-devel libattr-devel keyutils-libs-devel \
   expect rsh rsh-server telnet telnet-server mkisofs nfs-utils
 ```
-    Tip: on aarch64 OS currently:
+  Tip: on aarch64 OS currently:
 ```
 yum install -y libtirpc-devel
 ```
@@ -31,16 +31,16 @@ make && make install
 ### Run test:
 1. Evironment settings:
 ```
-\#disable firewalld
+#disable firewalld
 systemctl disable firewalld
 
-\#enable services
+#enable services
 systemctl enable rsh.socket
 systemctl enable rlogin.socket
 systemctl enable telnet.socket
 systemctl enable nfs
 
-\#disable selinux
+#disable selinux
 sed -i  "s/SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
 
 echo localhost >> /root/.rhosts
@@ -49,7 +49,7 @@ echo rlogin >> /etc/securetty
 echo rsh >> /etc/securetty
 echo rexec >> /etc/securetty
 
-\#then rebooting to make the settings available
+#then rebooting to make the settings available
 reboot
 ```
 
