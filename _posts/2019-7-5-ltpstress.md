@@ -5,13 +5,11 @@ title: Notes of Running Ltp
 
 ### Installation
 1. Install needed packages:
-`
-yum install -y \
-  numactl numactl-devel numactl-libs numad \
-  gcc kernel-devel \
-  libaio libaio-devel libcap-devel libattr-devel keyutils-libs-devel \
-  expect rsh rsh-server telnet telnet-server mkisofs nfs-utils
-`
+		yum install -y \
+		  numactl numactl-devel numactl-libs numad \
+		  gcc kernel-devel \
+		  libaio libaio-devel libcap-devel libattr-devel keyutils-libs-devel \
+		  expect rsh rsh-server telnet telnet-server mkisofs nfs-utils
 
 Tip: on aarch64 OS currently:
 `
