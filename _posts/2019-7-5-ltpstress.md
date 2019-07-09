@@ -1,8 +1,8 @@
-
 ---
 layout: post
 title: Notes of Running Ltp
 ---
+
 ###Installation
 1. Install needed packages:
 `
