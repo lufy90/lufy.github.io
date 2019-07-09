@@ -23,7 +23,7 @@ yum install -y libtirpc-devel
 make && make install
 ```
 
-    Tip: on aarch64 OS currently(isoft 5.0 and 5.1), only **ltp-full-20180118** could run smothly, and the configure options are needed.
+  Tip: on aarch64 OS currently(isoft 5.0 and 5.1), only **ltp-full-20180118** could run smothly, and the configure options are needed.
 ```
 ./configure CPPFLAGS=-I/usr/include/tirpc LDFLAGS=-ltirpc --prefix=/opt/ltp20180118
 ```
